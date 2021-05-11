@@ -1,0 +1,80 @@
+{
+  "vpc-provider:account=293597778932:filter.vpc-id=vpc-04410205bc1dfc5ae:region=us-east-2:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-04410205bc1dfc5ae",
+    "vpcCidrBlock": "10.0.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-0c8ee2e2939af3f2c",
+            "cidr": "10.0.1.0/24",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0298be3573fb1d797"
+          },
+          {
+            "subnetId": "subnet-06572915098e63fd9",
+            "cidr": "10.0.0.0/24",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-0298be3573fb1d797"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-0fd541ab9c9b48001",
+            "cidr": "10.0.2.0/24",
+            "availabilityZone": "us-east-2a",
+            "routeTableId": "rtb-05cfc98ca87250ac2"
+          },
+          {
+            "subnetId": "subnet-095c2473e27de5742",
+            "cidr": "10.0.3.0/24",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-05cfc98ca87250ac2"
+          },
+          {
+            "subnetId": "subnet-0888c0d578bc1a420",
+            "cidr": "10.0.4.0/24",
+            "availabilityZone": "us-east-2b",
+            "routeTableId": "rtb-0e84eeebe819934e9"
+          },
+          {
+            "subnetId": "subnet-06a4ef94e98fc88ae",
+            "cidr": "10.0.5.0/24",
+            "availabilityZone": "us-east-2c",
+            "routeTableId": "rtb-0e84eeebe819934e9"
+          }
+        ]
+      }
+    ]
+  },
+  "security-group:account=293597778932:region=us-east-2:securityGroupId=sg-0955e8d0abc527673": {
+    "securityGroupId": "sg-0955e8d0abc527673",
+    "allowAllOutbound": false
+  },
+  "load-balancer:account=293597778932:loadBalancerArn=arn$:aws:elasticloadbalancing:us-east-2:293597778932:loadbalancer/app/outo-backend-alb/0a9ade58689ab013:loadBalancerType=application:region=us-east-2": {
+    "loadBalancerArn": "arn:aws:elasticloadbalancing:us-east-2:293597778932:loadbalancer/app/outo-backend-alb/0a9ade58689ab013",
+    "loadBalancerCanonicalHostedZoneId": "Z3AADJGX6KTTL2",
+    "loadBalancerDnsName": "internal-outo-backend-alb-1941283770.us-east-2.elb.amazonaws.com",
+    "vpcId": "vpc-04410205bc1dfc5ae",
+    "securityGroupIds": [
+      "sg-0b8c20aa70255696b"
+    ],
+    "ipAddressType": "ipv4"
+  },
+  "security-group:account=293597778932:region=us-east-2:securityGroupId=sg-0b8c20aa70255696b": {
+    "securityGroupId": "sg-0b8c20aa70255696b",
+    "allowAllOutbound": false
+  },
+  "availability-zones:account=293597778932:region=us-east-2": [
+    "us-east-2a",
+    "us-east-2b",
+    "us-east-2c"
+  ]
+}
